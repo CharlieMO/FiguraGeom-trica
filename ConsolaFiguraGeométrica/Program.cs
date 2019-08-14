@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsolaFiguraGeometrica.Interface;
+using System;
 
 namespace ConsolaFiguraGeométrica
 {
@@ -6,7 +7,13 @@ namespace ConsolaFiguraGeométrica
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+        }
+
+        static void mostrarInformacion(IFiguraGeometrica figura)
+        {
+            Console.WriteLine($"Nombre : {figura.obtenerNombre()}");
+            Console.WriteLine($"Area : {figura.calcularArea()}");
+            Console.WriteLine($"Perimetro : {figura.calcularPerimetro()}");
         }
     }
 }
