@@ -1,4 +1,5 @@
 ﻿using ConsolaFiguraGeometrica.Interface;
+using ConsolaFiguraGeométrica.Modelo;
 using System;
 
 namespace ConsolaFiguraGeométrica
@@ -7,6 +8,10 @@ namespace ConsolaFiguraGeométrica
     {
         static void Main(string[] args)
         {
+            var t = new Triangulo(5, 10);
+            mostrarInformacion(t);
+            Console.ReadKey();
+
         }
 
         static void mostrarInformacion(IFiguraGeometrica figura)
