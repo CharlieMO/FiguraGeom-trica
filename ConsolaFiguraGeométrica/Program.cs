@@ -13,8 +13,6 @@ namespace ConsolaFiguraGeométrica
             Console.ReadKey();
             var t = new Triangulo(5, 10);
             mostrarInformacion(t);
-            Console.ReadKey();
-
         }
 
         static void mostrarInformacion(IFiguraGeometrica figura)
